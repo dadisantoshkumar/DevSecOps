@@ -5,7 +5,7 @@ pipeline {
         stage ('initialize') {
             steps {
 
-                sh'''
+                sh '''
 
                 echo $MAVEN_HOME
 
@@ -15,7 +15,9 @@ pipeline {
         }
 
         stage ('build') {
+            steps {
             sh 'mvn clean install'
+            }
         }
     }
 
