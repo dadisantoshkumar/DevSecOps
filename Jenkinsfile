@@ -7,7 +7,9 @@ pipeline {
 
                 sh '''
 
-                echo $MAVEN_HOME
+                export MAVEN_HOME=/usr/local/maven3.6.3
+                export M2_HOME=$MAVEN_HOME/bin
+                export PATH=$PATH:$M2_HOME
 
                 '''
 
