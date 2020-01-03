@@ -1,5 +1,6 @@
 This is a sample Web Application to use during Continuous Integration demos.
 
+#launch amazon ec2 server
 #Build Instruction
 
 ```
