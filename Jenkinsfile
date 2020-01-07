@@ -22,7 +22,7 @@ pipeline {
 
             steps {
 
-               
+               sh 'docker pull cincan/trufflehog'
                sh 'docker run cincan/trufflehog --json https://github.com/dadisantoshkumar/devsecops.git' > trufflehog 
                sh 'cat trufflehog'
             }
