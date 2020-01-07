@@ -23,7 +23,7 @@ pipeline {
             steps {
 
                
-               sh 'docker run gesellix/trufflehog --json https://github.com/dadisantoshkumar/devsecops.git' > trufflehog 
+               sh 'docker run cincan/trufflehog --json https://github.com/dadisantoshkumar/devsecops.git' > trufflehog 
                sh 'cat trufflehog'
             }
 
