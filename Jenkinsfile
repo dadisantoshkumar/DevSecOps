@@ -41,7 +41,7 @@ pipeline {
               
               sshagent(['tomcat']) {
 
-                  sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/DevSecOps/target/WebApp.war ubuntu@3.136.157.120:/opt/apache-tomcat-8.5.50/webapps/WebApp.war'
+                  sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/DevSecOps/target/WebApp.war ubuntu@18.191.247.216:/opt/apache-tomcat-8.5.50/webapps/WebApp.war'
 
         }
 
