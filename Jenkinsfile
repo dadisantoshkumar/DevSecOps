@@ -40,6 +40,7 @@ pipeline {
 
         stage ('build') {
             steps {
+            sh 'cd ..'
             sh 'mvn clean install'
             }
         }
