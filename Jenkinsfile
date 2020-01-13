@@ -29,6 +29,15 @@ pipeline {
 
         }
 
+         stage ('Defectdozo') {
+            steps {
+            sh 'git clone https://github.com/DefectDojo/django-DefectDojo.git'
+            sh 'cd django-DefectDojo'
+            sh 'docker-compose build'
+            sh 'docker-compose up'
+            }
+        }
+
         stage ('build') {
             steps {
             sh 'mvn clean install'
