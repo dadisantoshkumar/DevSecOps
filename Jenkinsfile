@@ -37,7 +37,7 @@ pipeline {
          stage ('Defectdozo') {
             steps {
             sh 'git clone https://github.com/DefectDojo/django-DefectDojo.git'
-            sh 'cd django-DefectDojo'
+            sh 'cd /var/lib/jenkins/workspace/DevSecOps/django-DefectDojo'
             sh 'pwd'
             sh 'docker-compose build'
             sh 'docker-compose up'
