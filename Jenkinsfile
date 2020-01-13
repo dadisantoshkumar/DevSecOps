@@ -39,6 +39,7 @@ pipeline {
             sh 'git clone https://github.com/DefectDojo/django-DefectDojo.git'
             sh 'cd django-DefectDojo'
             sh 'docker-compose build'
+            sh 'pwd'
             sh 'docker-compose up'
             }
         }
