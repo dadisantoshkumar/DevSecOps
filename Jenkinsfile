@@ -4,6 +4,11 @@ pipeline {
       maven 'maven3.6.3'
       }
     stages {
+        stage ('CleanWorkspace') {
+            steps {
+              cleanWs()
+              }
+           }
         stage ('initialize') {
             steps {
 
